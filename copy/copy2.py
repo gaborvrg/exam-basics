@@ -10,6 +10,8 @@
 import sys
 import os
 
+# print(sys.argv[1])
+
 if len(sys.argv) == 1:  # if no argument
     print ('copy','[source]','[destination]')
 
@@ -22,14 +24,18 @@ else:
         src = str(sys.argv[1])
         dst = str(sys.argv[2])
 
+        # print(str(sys.argv[1]),str(sys.argv[2]))
+
         handle = open(src, 'r')
         file = handle.read()
         handle.close()
+        # print(file)
 
         handle = open(dst, 'w')
         for line in file:
             handle.write(line)
         handle.close()   
+
 
     else:
         print("file doesn\'t exists")
