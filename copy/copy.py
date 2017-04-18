@@ -13,20 +13,20 @@ import os
 if len(sys.argv) == 1:  # if no argument
     print ('copy','[source]','[destination]')
 
-elif len(sys.argv) <= 2 :
+elif len(sys.argv) <= 2 : # if only one arg have
     print ('No destination provided' )
 
 else:
-    if os.path.isfile(sys.argv[1]) is True:
+    if os.path.isfile(sys.argv[1]) is True: # check the file exits
         print('File exists and write it to the destination!')
-        src = str(sys.argv[1])
-        dst = str(sys.argv[2])
+        source = str(sys.argv[1])
+        destination = str(sys.argv[2])
 
-        handle = open(src, 'r')
+        handle = open(source, 'r')
         file = handle.read()
         handle.close()
 
-        handle = open(dst, 'w')
+        handle = open(destination, 'w')
         for line in file:
             handle.write(line)
         handle.close()   
