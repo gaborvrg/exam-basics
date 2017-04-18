@@ -25,4 +25,4 @@ class Average(object):
 
 
 average = Average()
-print(average.odd_average([1,2,3]))
+print(average.odd_average([1,2,3,4,5,6]))
