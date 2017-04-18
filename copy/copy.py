@@ -8,12 +8,21 @@
 # Read all contents from it and write it to the destination
 
 
-from sys import argv
+import sys
+import os
 
+# print(sys.argv[1])
 
-
-
-
+if len(sys.argv) == 1:  # if no argument
+    print ('copy','[source]','[destination]' )
+elif len(sys.argv) == 2 :
+    print ('No destination provided' )
+else:
+    if os.path.isfile(sys.argv[1]) is True:
+        print('file exists')
+    else:
+        print("file doesn\'t exists")
+    
 
 
 
