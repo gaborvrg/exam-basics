@@ -4,12 +4,18 @@
 
 def odd_average(numbers_of_list):
 
+    nums_of_odd_numbers = 0
+
     for num in range(len(numbers_of_list)):
-         
         if numbers_of_list[num] % 2 == 0:   # even number
             pass
         else:   # odd number
             print(numbers_of_list[num])
+            numbers_of_list.append(numbers_of_list[num])
+            nums_of_odd_numbers += 1
+            print(numbers_of_list)
+
+    return 
 
 
 
