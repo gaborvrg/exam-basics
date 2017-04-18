@@ -20,3 +20,21 @@ print(deck)
 # Should print out:
 # Queen Spades
 # 11 cards - 3 Clubs, 3 Diamonds, 3 Hearts, 2 Spades
+
+
+class Card(object):
+    """docstring for Card"""
+    def __init__(self, color = '', value = ''):
+        # super(Card, self).__init__()
+        self.color = color
+        self.value = value
+
+
+class Deck(object):
+    """docstring for Deck"""
+    list_of_cards = []
+    
+    def __init__(self, arg):
+        # super(Deck, self).__init__()
+        self.arg = arg
+        
