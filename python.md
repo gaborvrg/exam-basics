@@ -36,13 +36,13 @@ The application is accepted if:
 
 #### Your answer:
 [add your answer here]   
-1:   
-2:   
-3:   
-4:   
-5:   
-6:   
-7:   
+1:  function keyword
+2:  function name
+3:  function argument(s) 
+4:  body of the function
+5:  local variable
+6:  return statement
+7:  return value 
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:

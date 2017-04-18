@@ -10,8 +10,6 @@
 # We should be able to draw the top card which returns the drawn card and also removes it from the deck
 # Deck should be represented as string in this format:
 # 12 cards -  3 Clubs, 3 Diamonds, 3 Hearts, 3 Spades
-deck = Deck(12)
-print(deck)
 # Should print out:
 # 12 cards -  3 Clubs, 3 Diamonds, 3 Hearts, 3 Spades
 top_card = deck.draw()
@@ -33,8 +31,12 @@ class Card(object):
 class Deck(object):
     """docstring for Deck"""
     list_of_cards = []
-    
-    def __init__(self, arg):
+
+    def __init__(self, number = 0):
         # super(Deck, self).__init__()
         self.arg = arg
+
+
         
+deck = Deck(12)
+print(deck)
