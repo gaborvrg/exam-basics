@@ -4,7 +4,6 @@
 # 9 Hearts
 # Jack Diamonds
 
-
 # Create a Deck class, that has a list of cards in it
 # Create a constructor that takes a whole number as parameter
 
@@ -13,6 +12,7 @@
 
 # We should be able to shuffle the deck, which randomly orders the cards
 # We should be able to draw the top card which returns the drawn card and also removes it from the deck
+
 # Deck should be represented as string in this format:
 # 12 cards -  3 Clubs, 3 Diamonds, 3 Hearts, 3 Spades
 
@@ -30,7 +30,7 @@
 
 class Card(object):
     """docstring for Card"""
-    def __init__(self, color = ['Hearts','Diamonds', 'Clubs', 'Spades'], value = '3'):
+    def __init__(self, color = 'Hearts', value = '3'):
         self.color = color
         self.value = value
 
@@ -39,7 +39,7 @@ class Deck(object):
     """docstring for Deck"""
     list_of_cards = []
 
-    def __init__(self, number = 0):
+    def __init__(self, number = 12):
         self.number = number
 
 
@@ -51,9 +51,4 @@ class Deck(object):
 
 deck = Deck(12)
 print(deck)
-
-
-
-
-
         
