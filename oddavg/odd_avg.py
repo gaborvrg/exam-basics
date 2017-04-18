@@ -8,11 +8,11 @@ class Average(object):
 
         nums_of_odd_numbers = 0
         sum_of_odd_numbers = 0
+
         if len(numbers_of_list) == 0 :
                 return print("Cannot division by zero")
         elif len(numbers_of_list) == 1 and numbers_of_list[0] % 2 == 0:
             return print("Cannot count average on one even number")
-
         else:
             for num in range(len(numbers_of_list)):
                 if numbers_of_list[num] % 2 == 0:   # even number
