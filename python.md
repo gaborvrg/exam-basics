@@ -46,4 +46,4 @@ The application is accepted if:
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+The __init__ function is called a constructor and it is used when you create a new instance of a class and it automatically called.
